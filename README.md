@@ -21,7 +21,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly availability, in addition to restricting access to the network.
+Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 - Load Balancers protect the availability aspect of security. They dispense
  traffic across servers in-order to ensure each of them is processing an evenly distributed load. Thus, reducing the likelihood of overwhelming 
  the network by too much activity on a single server.
