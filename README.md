@@ -4,12 +4,12 @@ The files in this repository were used to configure the network depicted below.
 
 ![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Playbook file may be used to install only certain pieces of it, such as Filebeat.
 
   - [Playbook](https://github.com/BayouBeast/ELK-Stack-Azure-Project/tree/main/Ansible)
 
 Contents:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -27,11 +27,11 @@ Load balancing ensures that the application will be highly availability, in addi
  the network by too much activity on a single server.
 
 -  Jump Boxes are what administrators connect to before doing tasks, connect  
-  to servers, or access environments that are not trusted. When configured right a jump box increases the security of a network. The most   
+  to servers, or access environments that are not trusted. When configured right a jump box increases the security of a network. The most
   secure  version of which is know a secure admin workstation (SAW). A SAW is a computer that an admin must use in order to carry out 
-  administrative tasks or connecting to a server or network. Jump Boxes are ONLY used for administrative tasks and are NEVER used for any other 
-  activity. In summation, Jump Boxes allow for tighter security because of their single point of access and single use purpose to using 
-  administrative privilege's on a network.
+  administrative tasks or connecting to a server or network. Jump Boxes are ONLY used for administrative tasks and are NEVER used for any 
+  other activity. In summation, Jump Boxes allow for tighter security because of their single point of access and single use purpose to 
+  using administrative privilege's on a network.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
 - _TODO: What does Filebeat watch for?_
