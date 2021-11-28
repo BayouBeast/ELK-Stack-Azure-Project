@@ -8,7 +8,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
   - [Playbook of YAML Files](https://github.com/BayouBeast/ELK-Stack-Azure-Project/tree/main/Playbook)
 
-Contents:
+# Contents:
 - Description of the Topology
 - Access Policies
 - ELK Configuration
