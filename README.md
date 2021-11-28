@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  - [Playbook](https://github.com/BayouBeast/ELK-Stack-Azure-Project/tree/main/Ansible)
 
 Contents:
 - Description of the Topologu
@@ -22,11 +22,16 @@ Contents:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly availability, in addition to restricting access to the network.
-- Load Balancers protect the availability aspect of security. They distribute
- traffic across servers in-order to ensure each one is processing an even load. Thus, reducing the likelihood of overwhelming the network by too much activity on a single server.
+- Load Balancers protect the availability aspect of security. They dispense
+ traffic across servers in-order to ensure each of them is processing an evenly distributed load. Thus, reducing the likelihood of overwhelming 
+ the network by too much activity on a single server.
 
-- Jump Boxes are what administrators connect to before doing tasks, connect  
- to servers, or access environments that are not trusted. When configured right a jump box increases the security of a network. The most secure version of which is know a secure admin workstation (SAW). A SAW is a computer that an admin must use in order to carry out administrative tasks or connecting to a server or network. Jump Boxes are ONLY used for administrative tasks and are NEVER used for any other activity. In summation, Jump Boxes allow for tighter security because of their single point of access and single use purpose to using administrative privilege's on a network.
+-  Jump Boxes are what administrators connect to before doing tasks, connect  
+  to servers, or access environments that are not trusted. When configured right a jump box increases the security of a network. The most   
+  secure  version of which is know a secure admin workstation (SAW). A SAW is a computer that an admin must use in order to carry out 
+  administrative tasks or connecting to a server or network. Jump Boxes are ONLY used for administrative tasks and are NEVER used for any other 
+  activity. In summation, Jump Boxes allow for tighter security because of their single point of access and single use purpose to using 
+  administrative privilege's on a network.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
 - _TODO: What does Filebeat watch for?_
