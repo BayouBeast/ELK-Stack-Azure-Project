@@ -4,7 +4,7 @@ This playbook contains a series of scripts used to automate the instillation and
 ### Docker and Pip 3 Install
 - This is the first install done.
 - Docker is a container which is lighter than a vm because it does not have an OS. This is what we will enable  
-  ansible on. After Ansible is configured then you will install Filebeat and Metricbeat onto Ansible.
+ ansible on. After Ansible is configured then you will install Filebeat and Metricbeat onto Ansible.
 - Pip3 is the official Python 3 package manager.
 
 ### hosts
