@@ -38,7 +38,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 - Metricbeat records metrics from data running on and through services services and gives it an output in a gui.
 
-### Machine Configuration Table
+#### Machine Configuration Table
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
@@ -46,6 +46,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 | Web-1    |          |            |                  |
 | Web-2    |          |            |                  |
 | Web-3    |          |            |                  |
+
 
 ### Access Policies
 
@@ -56,7 +57,7 @@ The Jumpbox is the ONLY machine that can accept connections from the Internet. A
 Machines within the network can only be accessed by the ansible container running on the jumpbox via the ssh protocol running on port 22.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
 
-A summary of the access policies in place can be found in the table below.
+#### Access Policy Table.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
