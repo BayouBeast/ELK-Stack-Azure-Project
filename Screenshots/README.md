@@ -6,7 +6,6 @@ This folder contains screenshots from what a successful implementation of the va
 [Filebeat Data Retrieval Successful](https://github.com/BayouBeast/ELK-Stack-Azure-Project/blob/main/Screenshots/filebeat_datarecived.PNG)
 
 [Metricbeat Data Retrieval Successful](https://github.com/BayouBeast/ELK-Stack-Azure-Project/blob/main/Screenshots/Metricbeat_datacheck.PNG)
-- 
--
 
-### Sub Titles
+
+
