@@ -38,15 +38,14 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 - Metricbeat records metrics from data running on and through services services and 
 
-The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+### Machine Configuration Table
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| Web      |          |            |                  |
-| Web      |          |            |                  |
-| Web      |          |            |                  |
+| Web-1    |          |            |                  |
+| Web-2    |          |            |                  |
+| Web-3    |          |            |                  |
 
 ### Access Policies
 
