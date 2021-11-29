@@ -17,6 +17,9 @@
 - Allows SSH into the Web Virtual Machines 1-3
 - Allows SSH into Elk Server
 
+### Web Virtual Machines
+- Private IP: 10.0.0.5, 10.0.0.6, 10.0.0.7
+- 
 ### Elk Server
 -
 
