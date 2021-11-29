@@ -17,14 +17,7 @@
 - Allows SSH into the Web Virtual Machines 1-3
 - Allows SSH into Elk Server
 
-### Web Virtual Machines
-- Private IP
-- Configured to evenly manage the incoming load from the internet from the load balancer
-- Access Point to the Web Server
-- The Elk Stack Server accesses all three to monitor the traffic 
-
 ### Elk Server
-- Private IP:
-- Configured to monitor the network traffic on the Web Facing Virtual Machines
+-
 
 
