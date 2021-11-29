@@ -36,9 +36,9 @@ Load balancing ensures that the application will be highly available, in additio
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
 - Filebeat watches for irregularities in files by "harvesting" them. Harvesters read the content within a file adn sends the content to an output of events which can be further analyzed.
 
-- Metricbeat records metrics from data running on and through services services and 
+- Metricbeat records metrics from data running on and through services services and gives it an output in a gui.
 
-### Machine Configuration Table
+#### Machine Configuration Table
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
@@ -47,16 +47,17 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 | Web-2    |          |            |                  |
 | Web-3    |          |            |                  |
 
+
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet.
 
-Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from your host IP address which can be found by typing; "What is my IP Address?" into a search engine.
+The Jumpbox is the ONLY machine that can accept connections from the Internet. Access to this machine is only allowed from your host IP address which can be found by typing; "What is my IP Address?" into a search engine.
 
 Machines within the network can only be accessed by the ansible container running on the jumpbox via the ssh protocol running on port 22.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
 
-A summary of the access policies in place can be found in the table below.
+#### Access Policy Table.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
