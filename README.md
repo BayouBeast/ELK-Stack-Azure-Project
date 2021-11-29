@@ -34,9 +34,9 @@ Load balancing ensures that the application will be highly available, in additio
   using administrative privilege's on a network.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- Filebeat watches for irregularities in files by "harvesting" them. Harvesters read the content within a file adn sends the content to an 
- output of events which can be further analyzed.
-- _TODO: What does Metricbeat record?_
+- Filebeat watches for irregularities in files by "harvesting" them. Harvesters read the content within a file adn sends the content to an output of events which can be further analyzed.
+
+- Metricbeat records metrics from data running on and through services services and 
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -62,7 +62,10 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
+| Jump Box | Yes                 | 10.0.0.1 10.0.0.2    |
+| Web-1    | No                  |                      |
+| Web-2    | No                  |                      |
+| Web-3    | No                  |                      |
 |          |                     |                      |
 |          |                     |                      |
 
