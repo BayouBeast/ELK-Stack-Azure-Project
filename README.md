@@ -34,7 +34,7 @@ Load balancing ensures that the application will be highly available, in additio
   using administrative privilege's on a network.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
+- Filebeat watches for_TODO: What does Filebeat watch for?_
 - _TODO: What does Metricbeat record?_
 
 The configuration details of each machine may be found below.
