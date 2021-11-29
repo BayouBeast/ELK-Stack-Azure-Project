@@ -85,7 +85,7 @@ This ELK server is configured to monitor the following machines:
 - _TODO: List the IP addresses of the machines you are monitoring_
 
 We have installed the following Beats on these machines:
-- Metricbeats and Filebeats have been installed on the
+- Metricbeats and Filebeats have been installed on the 
 
 These Beats allow us to collect the following information from each machine:
 - Filebeats allows one an easy way that is lightweight to forward and  
