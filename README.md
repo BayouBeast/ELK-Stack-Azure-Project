@@ -33,7 +33,7 @@ Load balancing ensures that the application will be highly available, in additio
   other activity. In summation, Jump Boxes allow for tighter security because of their single point of access and single use purpose to 
   using administrative privilege's on a network.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
 - Filebeat watches for irregularities in files by "harvesting" them. Harvesters read the content within a file adn sends the content to an output of events which can be further analyzed.
 
 - Metricbeat records metrics from data running on and through services services and 
@@ -81,7 +81,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+[Successful Configuration of Docker with Elk](https://github.com/BayouBeast/ELK-Stack-Azure-Project/blob/main/Screenshots/elk_deployment.PNG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
