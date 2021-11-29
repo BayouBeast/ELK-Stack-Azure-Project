@@ -22,16 +22,9 @@ These files have been tested and used to generate a live ELK deployment on Azure
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
-- Load Balancers protect the availability aspect of security. They dispense
- traffic across servers in-order to ensure each of them is processing an evenly distributed load. Thus, reducing the likelihood of overwhelming 
- the network by too much activity on a single server.
+- Load Balancers protect the availability aspect of security. They dispense traffic across servers in-order to ensure each of them is processing an evenly distributed load. Thus, reducing the likelihood of overwhelming the network by too much activity on a single server.
 
--  Jump Boxes are what administrators connect to before doing tasks, connect  
-  to servers, or access environments that are not trusted. When configured right a jump box increases the security of a network. The most
-  secure  version of which is know a secure admin workstation (SAW). A SAW is a computer that an admin must use in order to carry out 
-  administrative tasks or connecting to a server or network. Jump Boxes are ONLY used for administrative tasks and are NEVER used for any 
-  other activity. In summation, Jump Boxes allow for tighter security because of their single point of access and single use purpose to 
-  using administrative privilege's on a network.
+-  Jump Boxes are what administrators connect to for doing tasks, connecting to servers, or accessing environments that are not trusted. When configured right a jump box increases the security of a network. The most secure  version of which is know a secure admin workstation (SAW). A SAW is a computer that an admin must use in order to carry out administrative tasks or connecting to a server or network. Jump Boxes are ONLY used for administrative tasks and are NEVER used for any other activity. In summation, Jump Boxes allow for tighter security because of their single point of access and single use purpose to using administrative privilege's on a network.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
 - Filebeat watches for irregularities in files by "harvesting" them. Harvesters read the content within a file adn sends the content to an output of events which can be further analyzed.
