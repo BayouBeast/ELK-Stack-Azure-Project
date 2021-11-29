@@ -53,7 +53,7 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from your host IP address which can be found by typing; "What is my IP Address?" into a search engine.
 
-Machines within the network can only be accessed by ssh.
+Machines within the network can only be accessed by the ansible container running on the jumpbox via the ssh protocol running on port 22.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
 
 A summary of the access policies in place can be found in the table below.
