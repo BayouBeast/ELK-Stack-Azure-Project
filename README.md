@@ -63,12 +63,11 @@ Machines within the network can only be accessed by the ansible container runnin
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+Ansible was used to automate configuration of Elk. Automation is advantageous because it saves time and ensures consistancy of installs.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
+- Step 1: Install Docker using script [Docker and Pip3 Install](https://github.com/BayouBeast/ELK-Stack-Azure-Project/blob/main/Playbook/Docker_pip3_Download_Install.yml) and enable ansible by running sudo su | docker start (container name) | docker attach (container name). After Ansible is running configure it to the IP addresses necessary in the hosts file with nano which is located in /etc/ansible.
+- Step 2: Download the Configuration files [Filebeat Configuration](https://github.com/BayouBeast/ELK-Stack-Azure-Project/blob/main/Playbook/Filebeat_Configuration.yml) [Metricbeat Configuration](https://github.com/BayouBeast/ELK-Stack-Azure-Project/blob/main/Playbook/MetricbeatConfigExample.yml) to the ansible directory. 
 - ...
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
