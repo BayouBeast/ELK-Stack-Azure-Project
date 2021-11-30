@@ -67,8 +67,8 @@ Ansible was used to automate configuration of Elk. Automation is advantageous be
 
 The playbook implements the following tasks:
 - Step 1: Install Docker using script [Docker and Pip3 Install](https://github.com/BayouBeast/ELK-Stack-Azure-Project/blob/main/Playbook/Docker_pip3_Download_Install.yml) and enable ansible by running sudo su | docker start (container name) | docker attach (container name). After Ansible is running configure it to the IP addresses necessary in the hosts file with nano which is located in /etc/ansible.
-- Step 2: Download the Configuration files [Filebeat Configuration](https://github.com/BayouBeast/ELK-Stack-Azure-Project/blob/main/Playbook/Filebeat_Configuration.yml) [Metricbeat Configuration](https://github.com/BayouBeast/ELK-Stack-Azure-Project/blob/main/Playbook/MetricbeatConfigExample.yml) to the ansible directory. 
-- ...
+- Step 2: Download the Configuration files [Filebeat Configuration](https://github.com/BayouBeast/ELK-Stack-Azure-Project/blob/main/Playbook/Filebeat_Configuration.yml) and [Metricbeat Configuration](https://github.com/BayouBeast/ELK-Stack-Azure-Project/blob/main/Playbook/MetricbeatConfigExample.yml) to the ansible directory. Nano into the file and change the IP addresses to that of your JumpBox Provisioner in both files.
+- After Configuration you are ready to install the [Filebeat Instillation](https://github.com/BayouBeast/ELK-Stack-Azure-Project/blob/main/Playbook/Filebeat_Install_Launch.yml) and [Metricbeat Instillation](https://github.com/BayouBeast/ELK-Stack-Azure-Project/blob/main/Playbook/Metricbeat_Install_Launch.yml)
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
