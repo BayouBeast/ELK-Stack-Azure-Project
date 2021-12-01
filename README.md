@@ -33,15 +33,15 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 #### Machine Configuration Table
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-|__________|__________|____________|__________________|
-| Web-1    |   HOST   | 10.0.0.5   |                  |
-| Web-2    |   WEB    | 10.0.0.6   |                  |
-| Web-3    |   SERVER | 10.0.0.7   |                  |
-|__________|__________|____________|__________________|
-| ELK STACK| Monitor  | 10.        |                  |
+| Name     | Function | IP Address | Operating System  |
+|----------|----------|------------|------------------ |
+| Jump Box | Gateway  | 10.0.0.1   | Linux             |
+|__________|__________|____________|__________________ |
+| Web-1    |   HOST   | 10.0.0.5   | Web VM's are      |
+| Web-2    |   WEB    | 10.0.0.6   | running containers|
+| Web-3    |   SERVER | 10.0.0.7   | containers not OS |
+|__________|__________|____________|__________________ |
+| ELK STACK| Monitor  | 10.        | Linux             |
  
 
 
@@ -79,16 +79,14 @@ The following screenshot displays the result of running `docker ps` after succes
 [Successful Configuration of Docker with Elk](https://github.com/BayouBeast/ELK-Stack-Azure-Project/blob/main/Screenshots/elk_deployment.PNG)
 
 ### Target Machines & Beats
-This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+This ELK server is configured to monitor the Web Virtual Machines and the Jump Box Provisioner.
 
-We have installed the following Beats on these machines:
-- Metricbeats and Filebeats have been installed on the 
+- Metricbeats and Filebeats have been installed on the Virtual Machines on a Docker container within ansible 
 
 These Beats allow us to collect the following information from each machine:
-- Filebeats allows one an easy way that is lightweight to forward and  
-  centralize log files.
-- Metricbeats  
+- Filebeats allows one an easy way that is lightweight to forward and centralize log files.
+- Metricbeats is a Lightweight Metric collector from the systems and services to which it is configured. It can also export these metrics to a gui such as Kibana for 
+ ease of viewing. 
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
