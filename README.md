@@ -36,9 +36,13 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| Web-1    |          |            |                  |
-| Web-2    |          |            |                  |
-| Web-3    |          |            |                  |
+|__________|__________|____________|__________________|
+| Web-1    |   HOST   | 10.0.0.5   |                  |
+| Web-2    |   WEB    | 10.0.0.6   |                  |
+| Web-3    |   SERVER | 10.0.0.7   |                  |
+|__________|__________|____________|__________________|
+| ELK STACK| Monitor  | 10.        |                  |
+ 
 
 
 ### Access Policies
@@ -48,7 +52,7 @@ The machines on the internal network are not exposed to the public Internet.
 The Jumpbox is the ONLY machine that can accept connections from the Internet. Access to this machine is only allowed from your host IP address which can be found by typing; "What is my IP Address?" into a search engine.
 
 Machines within the network can only be accessed by the ansible container running on the jumpbox via the ssh protocol running on port 22.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+- The machines allowed to access the ELK vm are the host machine via http or the Jump Box via ssh.
 
 #### Access Policy Table.
 
@@ -84,7 +88,7 @@ We have installed the following Beats on these machines:
 These Beats allow us to collect the following information from each machine:
 - Filebeats allows one an easy way that is lightweight to forward and  
   centralize log files.
-- Metricbeats  _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- Metricbeats  
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
